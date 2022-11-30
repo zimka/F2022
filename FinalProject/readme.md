@@ -70,7 +70,7 @@ One exciting technique (new to the final project) is to use depth estimation. Wi
 
 While humans are capable of depth perception through binocular vision (stereopsis), the Crazyflie is monocular. However, advancements in _monocular depth estimation_, which uses a neural network to convert a monocular image into a depth map, makes the Crazyflie a compelling candidate for these more principled approaches.
 
-As with any approach, there are challenges: our current recommendation is to use two landmarks (of known distance from the drone) to determine the linear parameters needed to estimate the true unknown distance. Distinguishing two landmarks at all times is a challenge; there may be ways around this (more visible landmarks, recognizing the changes in obstacle distances between frames). If this approach sounds interesting, please look through the `depth_estimation_supplement` folder - specifically the `test_camera_depth.ipynb`. Feel free to discuss your strategy or any questions about the code with the AIs at OH r on Ed.
+As with any approach, there are challenges: our current recommendation is to use two landmarks (of known distance from the drone) to determine the linear parameters needed to estimate the true unknown distance. Distinguishing two landmarks at all times is a challenge; there may be ways around this (more visible landmarks, recognizing the changes in obstacle distances between frames). If this approach sounds interesting, please look through the `depth_estimation_supplement` folder - specifically the `test_camera_depth.ipynb`. If you choose to go with this approach, please feel free to tell the course staff as we may be able to provide additional support.
 
 ## Advice From The Instructors
 
