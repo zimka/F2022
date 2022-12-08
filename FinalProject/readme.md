@@ -56,7 +56,7 @@ Each of the three trials will be scored based on the two criteria above. Note th
 
 ### Identifying the target
 
-For identifying the target (book), you can use the pretrained neural networks you used in Assignment 9. In addition to faces (which models can typically identify well), you can also look into the use of [AprilTags](https://april.eecs.umich.edu/software/apriltag) or [ArUco Markers](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html) (basically QR codes that are recognizable to the camera with some software).  
+For identifying the target (book), you can use the pretrained neural networks you used in Assignment 9. You are allowed to attach an image to the surface of the book. In addition to faces (which models can typically identify well), you can also look into the use of [AprilTags](https://april.eecs.umich.edu/software/apriltag) or [ArUco Markers](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html) (basically QR codes that are recognizable to the camera with some software).  
 
 ### Obstacle avoidance and navigation
 
