@@ -56,7 +56,7 @@ Each of the three trials will be scored based on the two criteria above. Note th
 
 ### Identifying the target
 
-For identifying the target (book), you can use the pretrained neural networks you used in Assignment 9. 
+For identifying the target (book), you can use the pretrained neural networks you used in Assignment 9. In addition to faces (which models can typically identify well), you can also look into the use of [AprilTags](https://april.eecs.umich.edu/software/apriltag) or [ArUco Markers](https://docs.opencv.org/4.x/d5/dae/tutorial_aruco_detection.html) (basically QR codes that are recognizable to the camera with some software).  
 
 ### Obstacle avoidance and navigation
 
@@ -70,7 +70,7 @@ One exciting technique (new to the final project) is to use depth estimation. Wi
 
 While humans are capable of depth perception through binocular vision (stereopsis), the Crazyflie is monocular. However, advancements in _monocular depth estimation_, which uses a neural network to convert a monocular image into a depth map, makes the Crazyflie a compelling candidate for these more principled approaches.
 
-As with any approach, there are challenges: our current recommendation is to use two landmarks (of known distance from the drone) to determine the linear parameters needed to estimate the true unknown distance. Distinguishing two landmarks at all times is a challenge; there may be ways around this (more visible landmarks, recognizing the changes in obstacle distances between frames). If this approach sounds interesting, please look through the `depth_estimation_supplement` folder - specifically the `test_camera_depth.ipynb`. If you choose to go with this approach, please feel free to tell the course staff as we may be able to provide additional support.
+As with any approach, there are challenges: our current recommendation is to use two landmarks (of known distance from the drone) to determine the linear parameters needed to estimate the true unknown distance. Distinguishing two landmarks at all times is a challenge; there may be ways around this (more visible landmarks, recognizing the changes in obstacle distances between frames). To overcome some of the challenges of absolute depth estimation, it is also possible to use the relative depth (which is easy to obtain and doesn't require the use of landmarks) as a heuristic to plan the direction of your next step (e.g. with gap-finding). This is also covered at the bottom of the python notebook. If this approach sounds interesting, please look through the `depth_estimation_supplement` folder - specifically the `test_camera_depth.ipynb`. If you choose to go with this approach, we encourage you to tell the course staff as we may be able to provide additional support.  
 
 ## Advice From The Instructors
 
